@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { HomeScreen, MyOrdersScreen, ProfileScreen } from "./index";
+import { CustomTabBar } from "../Components";
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -11,7 +11,10 @@ const Stack = createNativeStackNavigator();
 
 const MainTabNavigator = () => {
   return (
-    <Tab.Navigator initialRouteName={'MyOrdersScreen'}>
+    <Tab.Navigator
+      initialRouteName={'MyOrdersScreen'}
+      tabBar={props => <CustomTabBar {...props} />}
+    >
       <Tab.Screen
         name="HomeScreen"
         options={{ title: 'Home' }}

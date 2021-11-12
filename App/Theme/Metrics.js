@@ -22,4 +22,5 @@ export const MetricsMod = {
   doubleBaseMargin: moderateScale(20),
   section: moderateScale(25),
   doubleSection: moderateScale(50),
+  sixty: moderateScale(60),
 };

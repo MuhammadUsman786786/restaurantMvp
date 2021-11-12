@@ -5,6 +5,7 @@ import { MetricsHorizontal, MetricsMod } from "../Theme/Metrics";
 import { Fonts } from "../Theme/Fonts";
 import { ICON_TYPES, ORDER_STATUS_KEYS } from "../Utilities/Constants";
 import VectorIcon from "./VectorIcon";
+import moment from "moment";
 
 const STATUS_TO_COLOR_MAP = {
   [ORDER_STATUS_KEYS.PROCESSING]: Colors.orange,
@@ -29,7 +30,9 @@ const OrderItem = ({ item }) => {
 
   return <View style={styles.container}>
     <View style={styles.row}>
-      <Text style={styles.time}>{time}</Text>
+      <Text style={styles.time}>
+        {moment(time).format('DD MMM, YYYY hh:mm A')}
+      </Text>
       <Text
         style={[styles.orderStatus, { color: statusColor }]}>{orderStatus}</Text>
     </View>

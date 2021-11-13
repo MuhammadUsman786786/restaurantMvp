@@ -12,7 +12,7 @@ const Stack = createNativeStackNavigator();
 const MainTabNavigator = () => {
   return (
     <Tab.Navigator
-      initialRouteName={'MyOrdersScreen'}
+      // initialRouteName={'MyOrdersScreen'}
       tabBar={props => <CustomTabBar {...props} />}
     >
       <Tab.Screen

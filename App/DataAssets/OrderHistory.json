@@ -1,0 +1,20 @@
+[
+  {
+    "orderID": "#2BTVG",
+    "date": "2021-11-08T18:44:33.928Z",
+    "time": "2021-11-08T18:44:33.928Z",
+    "price": "$14.46",
+    "mealName": "Avocado Toast",
+    "restaurantName": "NU Kitchen Somerville",
+    "orderStatus": "Processing"
+  },
+  {
+    "orderID": "#2BTVH",
+    "date": "2021-11-08T18:44:33.928Z",
+    "time": "2021-11-08T18:44:33.928Z",
+    "price": "$15.46",
+    "mealName": "Avocado Toast",
+    "restaurantName": "NU Kitchen Somerville",
+    "orderStatus": "Completed"
+  }
+]
